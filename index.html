@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Play station</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+    * {
+      box-sizing: border-box;
+    }
+
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    /* a:link {
+      color: #ff4066;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #ff4066;
+      background-color: transparent;
+      text-decoration: none;
+      transition: color 1s;
+    }
+
+    a:hover {
+      color: rgb(255, 255, 255);
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: #ffffff;
+      background-color: transparent;
+      text-decoration: underline;
+    } */
+    a {
+  position: relative;
+  display: inline-block;
+  font-weight: 800;
+  color: royalblue;
+  overflow: hidden;
+  background: linear-gradient(to right, #406fb5,  rgb(69, 90, 175) 50%, #fa4454 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 550ms ease;
+  text-decoration: none;
+}
+a:hover {
+  background-position: 0 100%;
+}
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #152238;
+      overflow: hidden;
+      font-family: "Russo One", sans-serif;
+      transform-style: preserve-3d;
+    }
+
+    .thank {
+      opacity: 0;
+      color: #fa4454;
+      font-size: 1.5em;
+      text-align: center;
+
+    }
+
+    .thank1 {
+      opacity: 0;
+      color: #fa4454;
+      text-align: center;
+      font-size: 1.5em;
+
+    }
+
+    .thank2 {
+      opacity: 0;
+      color: #fa4454;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .thank3 {
+      opacity: 0;
+      color: #fa4454;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .thank4 {
+      opacity: 0;
+      color: #fa4454;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .thank5 {
+      opacity: 0;
+      color: #fa4454;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .button {
+      position: absolute;
+      margin: 0 auto;
+      width: 250px;
+      border: 0.5px solid #ffffff;
+      color: #ff4066;
+      border-radius: 0.1em;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.3em;
+      cursor: pointer;
+      height: 40px;
+      opacity: 1;
+      transition: all 0.2s ease;
+      line-height: 30px;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      perspective-origin: 49% 50%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button p {
+      transition: all 0.2s ease;
+      user-select: none;
+      line-height: 33px;
+      position: absolute;
+    }
+
+    .button3 {
+      position: absolute;
+      margin: 0 auto;
+      width: 250px;
+      border: 0.5px solid #ffffff;
+      color: #ff4066;
+      border-radius: 0.1em;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.3em;
+      cursor: pointer;
+      height: 40px;
+      opacity: 1;
+      transition: all 0.2s ease;
+      line-height: 30px;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      perspective-origin: 49% 50%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button3 p {
+      transition: all 0.2s ease;
+      user-select: none;
+      line-height: 33px;
+      position: absolute;
+    }
+
+    .button4 {
+      position: absolute;
+      margin: 0 auto;
+      width: 250px;
+      border: 0.5px solid #ffffff;
+      color: #ff4066;
+      border-radius: 0.1em;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.3em;
+      cursor: pointer;
+      height: 40px;
+      opacity: 1;
+      transition: all 0.2s ease;
+      line-height: 30px;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      perspective-origin: 49% 50%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button4 p {
+      transition: all 0.2s ease;
+      user-select: none;
+      line-height: 33px;
+      position: absolute;
+    }
+
+    .button5 {
+      position: absolute;
+      margin: 0 auto;
+      width: 250px;
+      border: 0.5px solid #ffffff;
+      color: #ff4066;
+      border-radius: 0.1em;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.3em;
+      cursor: pointer;
+      height: 40px;
+      opacity: 1;
+      transition: all 0.2s ease;
+      line-height: 30px;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      perspective-origin: 49% 50%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button5 p {
+      transition: all 0.2s ease;
+      user-select: none;
+      line-height: 33px;
+      position: absolute;
+    }
+
+    .button1 {
+      position: absolute;
+      margin: 0 auto;
+      width: 250px;
+      border: 0.5px solid #ffffff;
+      color: #ff4066;
+      border-radius: 0.1em;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.3em;
+      cursor: pointer;
+      height: 40px;
+      opacity: 1;
+      transition: all 0.2s ease;
+      line-height: 30px;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      perspective-origin: 49% 50%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button1 p {
+      transition: all 0.2s ease;
+      user-select: none;
+      line-height: 33px;
+      position: absolute;
+    }
+
+    .button2 {
+      position: absolute;
+      margin: 0.5 auto;
+      width: 250px;
+      border: 0.5px solid #ffffff;
+      color: #ff4066;
+      border-radius: 0.1em;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.3em;
+      cursor: pointer;
+      height: 40px;
+      opacity: 1;
+      transition: all 0.2s ease;
+      line-height: 30px;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      perspective-origin: 49% 50%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button2 p {
+      transition: all 0.2s ease;
+      user-select: none;
+      line-height: 33px;
+      position: absolute;
+    }
+
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.2;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0e1624;
+  height: 100vh;
+  width: 100vw;
+  background-image:url('back.JPG');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #ff4066;
+  font-size: 124px;
+  letter-spacing: 8px;
+  cursor: pointer;
+}
+
+span::before {
+  content: "PLAYSTATION";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    rgb(223, 220, 187) 2px,
+    rgb(223, 220, 187) 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition:1s;
+}
+
+span::after {
+  content: "PLAYSTATION";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    
+    rgb(36, 121, 121) 2px,
+    rgb(36, 121, 121) 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition:1s;
+}
+
+span:hover:before {
+  top: 10px;
+  left: 10px;
+  
+}
+
+span:hover:after {
+  top: -10px;
+  left: -10px;
+} 
+
+
+</style>
+</head>
+
+<body>
+
+  <!-- partial:index.partial.html -->
+
+
+  <span style="top: 14%;">PLAYSTATION</span>
+
+  <div class="container" style="padding-top: 10%">
+    <div class="row justify-content-md-center" style="padding: 0.7%;">
+
+      <p class="thank"><a href="project1.html">Let's Go</a></p>
+      <div class="button">
+        <p>Quiz Game</p>
+      </div>
+
+    </div>
+    <div class="row justify-content-md-center" style="padding: 0.7%;">
+
+      <p class="thank1"><a href="project2.html">Let's Go</a></p>
+      <div class="button1">
+        <p>Pairs Game</p>
+      </div>
+
+    </div>
+
+    <div class="row justify-content-md-center" style="padding: 0.7%;">
+
+      <p class="thank2"><a href="project3.html">Let's Go</a></p>
+      <div class="button2">
+        <p>Drum Kit</p>
+      </div>
+
+    </div>
+
+    <div class="row justify-content-md-center" style="padding: 0.7%;">
+
+      <p class="thank3"><a href="project4.html">Let's Go</a></p>
+      <div class="button3">
+        <p>Rock Paper </p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+  <!-- <script  src="./script.js"></script> -->
+  <script>
+    let button = document.querySelector(".button");
+    let buttonText = document.querySelector(".button p");
+    let thankText = document.querySelector(".button p:last-child");
+
+    let timeLine = new TimelineMax({
+      paused: false
+    });
+
+    button.addEventListener("click", () => {
+      timeLine
+        .to(buttonText, 0.6, {
+          opacity: 0
+        })
+        .to(button, 0.8, {
+          height: 0.2,
+          opacity: 0.5,
+          boxShadow: "0px 0px 35px 7px #cd28fa",
+          delay: 0.15
+        })
+        .to(button, 0.1, {
+          opacity: 0.5,
+          background: "#26ff92"
+        })
+        .to(button, 0, {
+          width: 1,
+          delay: 0.15
+        })
+        .to(button, 0.1, {
+          boxShadow: "0px 0px 100px 55px #fa2856",
+          y: 90,
+          height: 100,
+          delay: 0.23
+        })
+        .to(button, 0.3, {
+          height: 1000,
+          y: -1500,
+          boxShadow: "0px 0px 85px 17px #fa2856",
+          delay: 0.2
+        })
+        .to(".thank", 1, {
+          opacity: 1,
+          delay: 0.3
+        });
+    });
+    let button2 = document.querySelector(".button2");
+    let button2Text = document.querySelector(".button2 p");
+    let thank2Text = document.querySelector(".button2 p:last-child");
+
+    let timeLine2 = new TimelineMax({
+      paused: false
+    });
+
+    button2.addEventListener("click", () => {
+      timeLine
+        .to(button2Text, 0.6, {
+          opacity: 0
+        })
+        .to(button2, 0.8, {
+          height: 0.2,
+          opacity: 0.5,
+          boxShadow: "0px 0px 35px 7px #cd28fa",
+          delay: 0.15
+        })
+        .to(button2, 0.1, {
+          opacity: 0.5,
+          background: "#26ff92"
+        })
+        .to(button2, 0, {
+          width: 1,
+          delay: 0.15
+        })
+        .to(button2, 0.1, {
+          boxShadow: "0px 0px 100px 55px #fa2856",
+          y: 90,
+          height: 100,
+          delay: 0.23
+        })
+        .to(button2, 0.3, {
+          height: 1000,
+          y: -1500,
+          boxShadow: "0px 0px 85px 17px #fa2856",
+          delay: 0.2
+        })
+        .to(".thank2", 1, {
+          opacity: 1,
+          delay: 0.3
+        });
+    });
+
+    let button1 = document.querySelector(".button1");
+    let button1Text = document.querySelector(".button1 p");
+    let thank1Text = document.querySelector(".button1 p:last-child");
+
+    let timeLine1 = new TimelineMax({
+      paused: false
+    });
+
+    button1.addEventListener("click", () => {
+      timeLine
+        .to(button1Text, 0.6, {
+          opacity: 0
+        })
+        .to(button1, 0.8, {
+          height: 0.2,
+          opacity: 0.5,
+          boxShadow: "0px 0px 35px 7px #cd28fa",
+          delay: 0.15
+        })
+        .to(button1, 0.1, {
+          opacity: 0.5,
+          background: "#26ff92"
+        })
+        .to(button1, 0, {
+          width: 1,
+          delay: 0.15
+        })
+        .to(button1, 0.1, {
+          boxShadow: "0px 0px 100px 55px #fa2856",
+          y: 90,
+          height: 100,
+          delay: 0.23
+        })
+        .to(button1, 0.3, {
+          height: 1000,
+          y: -1500,
+          boxShadow: "0px 0px 85px 17px #fa2856",
+          delay: 0.2
+        })
+        .to(".thank1", 1, {
+          opacity: 1,
+          delay: 0.3
+        });
+    });
+    let button3 = document.querySelector(".button3");
+    let button3Text = document.querySelector(".button3 p");
+    let thank3Text = document.querySelector(".button3 p:last-child");
+
+    let timeLine3 = new TimelineMax({
+      paused: false
+    });
+
+    button3.addEventListener("click", () => {
+      timeLine
+        .to(button3Text, 0.6, {
+          opacity: 0
+        })
+        .to(button3, 0.8, {
+          height: 0.2,
+          opacity: 0.5,
+          boxShadow: "0px 0px 35px 7px #cd28fa",
+          delay: 0.15
+        })
+        .to(button3, 0.1, {
+          opacity: 0.5,
+          background: "#26ff92"
+        })
+        .to(button3, 0, {
+          width: 1,
+          delay: 0.15
+        })
+        .to(button3, 0.1, {
+          boxShadow: "0px 0px 100px 55px #fa2856",
+          y: 90,
+          height: 100,
+          delay: 0.23
+        })
+        .to(button3, 0.3, {
+          height: 1000,
+          y: -1500,
+          boxShadow: "0px 0px 85px 17px #fa2856",
+          delay: 0.2
+        })
+        .to(".thank3", 1, {
+          opacity: 1,
+          delay: 0.3
+        });
+    });
+    let button4 = document.querySelector(".button4");
+    let button4Text = document.querySelector(".button4 p");
+    let thank4Text = document.querySelector(".button4 p:last-child");
+
+    let timeLine4 = new TimelineMax({
+      paused: false
+    });
+
+    button4.addEventListener("click", () => {
+      timeLine
+        .to(button4Text, 0.6, {
+          opacity: 0
+        })
+        .to(button4, 0.8, {
+          height: 0.2,
+          opacity: 0.5,
+          boxShadow: "0px 0px 35px 7px #cd28fa",
+          delay: 0.15
+        })
+        .to(button4, 0.1, {
+          opacity: 0.5,
+          background: "#26ff92"
+        })
+        .to(button4, 0, {
+          width: 1,
+          delay: 0.15
+        })
+        .to(button4, 0.1, {
+          boxShadow: "0px 0px 100px 55px #fa2856",
+          y: 90,
+          height: 100,
+          delay: 0.23
+        })
+        .to(button4, 0.3, {
+          height: 1000,
+          y: -1500,
+          boxShadow: "0px 0px 85px 17px #fa2856",
+          delay: 0.2
+        })
+        .to(".thank4", 1, {
+          opacity: 1,
+          delay: 0.3
+        });
+    });
+    let button5 = document.querySelector(".button5");
+    let button5Text = document.querySelector(".button5 p");
+    let thank5Text = document.querySelector(".button5 p:last-child");
+
+    let timeLine5 = new TimelineMax({
+      paused: false
+    });
+
+    button5.addEventListener("click", () => {
+      timeLine
+        .to(button5Text, 0.6, {
+          opacity: 0
+        })
+        .to(button5, 0.8, {
+          height: 0.2,
+          opacity: 0.5,
+          boxShadow: "0px 0px 35px 7px #cd28fa",
+          delay: 0.15
+        })
+        .to(button5, 0.1, {
+          opacity: 0.5,
+          background: "#26ff92"
+        })
+        .to(button5, 0, {
+          width: 1,
+          delay: 0.15
+        })
+        .to(button5, 0.1, {
+          boxShadow: "0px 0px 100px 55px #fa2856",
+          y: 90,
+          height: 100,
+          delay: 0.23
+        })
+        .to(button5, 0.3, {
+          height: 1000,
+          y: -1500,
+          boxShadow: "0px 0px 85px 17px #fa2856",
+          delay: 0.2
+        })
+        .to(".thank5", 1, {
+          opacity: 1,
+          delay: 0.3
+        });
+    });
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
