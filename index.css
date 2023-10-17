@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* a:link {
+  color: #ff4066;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ff4066;
+  background-color: transparent;
+  text-decoration: none;
+  transition: color 1s;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: underline;
+} */
+a {
+position: relative;
+display: inline-block;
+font-weight: 800;
+color: royalblue;
+overflow: hidden;
+background: linear-gradient(to right, #406fb5,  rgb(69, 90, 175) 50%, #fa4454 50%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-size: 200% 100%;
+background-position: 100%;
+transition: background-position 550ms ease;
+text-decoration: none;
+}
+a:hover {
+background-position: 0 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #152238;
+  overflow: hidden;
+  font-family: "Russo One", sans-serif;
+  transform-style: preserve-3d;
+}
+
+.thank {
+  opacity: 0;
+  color: #fa4454;
+  font-size: 1.5em;
+  text-align: center;
+
+}
+
+.thank1 {
+  opacity: 0;
+  color: #fa4454;
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
+.thank2 {
+  opacity: 0;
+  color: #fa4454;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.thank3 {
+  opacity: 0;
+  color: #fa4454;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.thank4 {
+  opacity: 0;
+  color: #fa4454;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.thank5 {
+  opacity: 0;
+  color: #fa4454;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.button {
+  position: absolute;
+  margin: 0 auto;
+  width: 250px;
+  border: 0.5px solid #ffffff;
+  color: #ff4066;
+  border-radius: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+  cursor: pointer;
+  height: 40px;
+  opacity: 1;
+  transition: all 0.2s ease;
+  line-height: 30px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  perspective-origin: 49% 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.button p {
+  transition: all 0.2s ease;
+  user-select: none;
+  line-height: 33px;
+  position: absolute;
+}
+
+.button3 {
+  position: absolute;
+  margin: 0 auto;
+  width: 250px;
+  border: 0.5px solid #ffffff;
+  color: #ff4066;
+  border-radius: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+  cursor: pointer;
+  height: 40px;
+  opacity: 1;
+  transition: all 0.2s ease;
+  line-height: 30px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  perspective-origin: 49% 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.button3 p {
+  transition: all 0.2s ease;
+  user-select: none;
+  line-height: 33px;
+  position: absolute;
+}
+
+.button4 {
+  position: absolute;
+  margin: 0 auto;
+  width: 250px;
+  border: 0.5px solid #ffffff;
+  color: #ff4066;
+  border-radius: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+  cursor: pointer;
+  height: 40px;
+  opacity: 1;
+  transition: all 0.2s ease;
+  line-height: 30px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  perspective-origin: 49% 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.button4 p {
+  transition: all 0.2s ease;
+  user-select: none;
+  line-height: 33px;
+  position: absolute;
+}
+
+.button5 {
+  position: absolute;
+  margin: 0 auto;
+  width: 250px;
+  border: 0.5px solid #ffffff;
+  color: #ff4066;
+  border-radius: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+  cursor: pointer;
+  height: 40px;
+  opacity: 1;
+  transition: all 0.2s ease;
+  line-height: 30px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  perspective-origin: 49% 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.button5 p {
+  transition: all 0.2s ease;
+  user-select: none;
+  line-height: 33px;
+  position: absolute;
+}
+
+.button1 {
+  position: absolute;
+  margin: 0 auto;
+  width: 250px;
+  border: 0.5px solid #ffffff;
+  color: #ff4066;
+  border-radius: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+  cursor: pointer;
+  height: 40px;
+  opacity: 1;
+  transition: all 0.2s ease;
+  line-height: 30px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  perspective-origin: 49% 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.button1 p {
+  transition: all 0.2s ease;
+  user-select: none;
+  line-height: 33px;
+  position: absolute;
+}
+
+.button2 {
+  position: absolute;
+  margin: 0.5 auto;
+  width: 250px;
+  border: 0.5px solid #ffffff;
+  color: #ff4066;
+  border-radius: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+  cursor: pointer;
+  height: 40px;
+  opacity: 1;
+  transition: all 0.2s ease;
+  line-height: 30px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  perspective-origin: 49% 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.button2 p {
+  transition: all 0.2s ease;
+  user-select: none;
+  line-height: 33px;
+  position: absolute;
+}
+
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+body {
+padding: 0;
+margin: 0;
+font-family: 'Poppins', sans-serif;
+background: #0e1624;
+height: 100vh;
+width: 100vw;
+background-image:url('back.JPG');
+background-attachment: fixed;
+background-size: cover;
+}
+
+span {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+display: block;
+color: #ff4066;
+font-size: 124px;
+letter-spacing: 8px;
+cursor: pointer;
+}
+
+span::before {
+content: "PLAYSTATION";
+position: absolute;
+color: transparent;
+background-image: repeating-linear-gradient(
+45deg,
+transparent 0,
+transparent 2px,
+rgb(223, 220, 187) 2px,
+rgb(223, 220, 187) 4px
+);
+-webkit-background-clip: text;
+top: 0px;
+left: 0;
+z-index: -1;
+transition:1s;
+}
+
+span::after {
+content: "PLAYSTATION";
+position: absolute;
+color: transparent;
+background-image: repeating-linear-gradient(
+135deg,
+transparent 0,
+transparent 2px,
+
+rgb(36, 121, 121) 2px,
+rgb(36, 121, 121) 4px
+);
+-webkit-background-clip: text;
+top: 0px;
+left: 0px;
+transition:1s;
+}
+
+span:hover:before {
+top: 10px;
+left: 10px;
+
+}
+
+span:hover:after {
+top: -10px;
+left: -10px;
+} 
